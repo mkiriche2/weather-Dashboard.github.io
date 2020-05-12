@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+        integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel='stylesheet' href='style.css'>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-12' id='header'>
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-3' id='sidebar'>
+                <div class='row'>
+                    <div class='col-md-12' id='search'>
+                        <div class='input-group mb-3'>
+                            <input type='text' class='form-control' id='input' placeholder='city name'
+                                aria-label='Recipients username' aria-describedby='basic-addon2'>
+                            <div class='input-group-append'>
+                                <button type='button' class='btn btn-primary' id='search-button'>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-12' id='trending'>
+                        <div class='card' style='width: 100'>
+                            <ul class='list-group list-group-flush'>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-9' id='main'>
+                <div class='row'>
+                    <div class='col-md-12' id='overview'>
+                        <div class='jumbotron' style="background-color:skyblue;">
+                            <h1 class='display-4'></h1>
+                            <hr>
+                            <p class='lead'></p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-12' id='upcoming'>
+                        <div class='card-deck' style='width: 100%'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
